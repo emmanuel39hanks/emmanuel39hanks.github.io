@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmanuel Haankwenda - Portfolio</title>
+
+    <!--
+    - favicon
+    -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+    -->
+    <main>
+      <!--
+      - #SIDEBAR
+      -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Emmanuel Haankwenda"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Emmanuel Haankwenda">
+              Emmanuel <br />
+              Haankwenda
+            </h1>
+
+            <p class="title">Backend Engineer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a
+                  href="mailto:emmanuel.haankwenda2018@gmail.com"
+                  class="contact-link"
+                  >emmanuel.haankwenda2018@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+260777731615" class="contact-link"
+                  >+260 777 731 615</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Lusaka, Zambia</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/emmanuelhaankwenda"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://github.com/emmanuel39hanks" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+      -->
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+        -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <a
+                href="https://medium.com/@emmanuel.haankwenda2018"
+                target="_blank"
+                class="navbar-link"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+        -->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              As a Software Engineer, my over 4+ years of coding experience have
+              sharpened my skills in delivering scalable and efficient
+              solutions. I thrive on adapting to new technologies and
+              collaborating effectively with teams, navigating the challenges of
+              modern software projects with confidence. I actively seek to
+              enhance my abilities and contribute meaningfully to my team and
+              projects.
+            </p>
+
+            <p>
+              I have experience working with various technologies, including
+              backend development with NestJS, Node.js, GraphQL, and Django REST
+              Framework, as well as frontend development with HTML, CSS,
+              React.js, and Vue.js. I am also proficient in DevOps practices,
+              utilizing Docker, AWS, and GitHub Actions for CI/CD.
+            </p>
+          </section>
+
+          <!--
+          - service
+          -->
+          <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">API Development</h4>
+                  <p class="service-item-text">
+                    Creating robust and scalable RESTful and GraphQL APIs using
+                    modern frameworks like NestJS and Django Rest Framework.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Database Management</h4>
+                  <p class="service-item-text">
+                    Efficiently managing and optimizing databases including
+                    MongoDB and RDBMS to ensure high performance and
+                    reliability.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">DevOps</h4>
+                  <p class="service-item-text">
+                    Implementing CI/CD pipelines, containerization with Docker,
+                    and cloud deployments to streamline development and
+                    deployment processes.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">System Integration</h4>
+                  <p class="service-item-text">
+                    Integrating diverse systems and services to create cohesive
+                    and efficient solutions that meet client requirements.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
+                  <p class="service-item-text">
+                    High-quality development of websites at a professional
+                    level, using modern web technologies and best practices to
+                    ensure responsive and user-friendly interfaces.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile Development</h4>
+                  <p class="service-item-text">
+                    Professional development of mobile applications for both iOS
+                    and Android platforms using Flutter, ensuring a smooth and
+                    consistent user experience.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+        -->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Software Engineer</h4>
+                <span>February 2023 — Present</span>
+                <p class="timeline-text">
+                  Developed and maintained scalable RESTful APIs using Django
+                  Rest Framework and NestJS, aligning with diverse client
+                  requirements. Implemented CI/CD pipelines with GitHub Actions,
+                  enhancing deployment efficiency and code reliability.
+                  Collaborated with cross-functional teams for seamless API
+                  integration with client applications, ensuring cohesive user
+                  experiences. Contributed to front-end development with Nuxt.js
+                  and React.js, focusing on user-friendly interfaces and smooth
+                  front-end/back-end integration. Utilized GraphQL for efficient
+                  data retrieval, optimizing API capabilities for client
+                  applications.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Software Engineer Intern</h4>
+                <span>December 2022 — February 2023</span>
+                <p class="timeline-text">
+                  Developed and contributed to the Hrvst mobile app, an
+                  innovative platform aimed at revolutionizing the agricultural
+                  industry. Leveraged AWS Amplify to enhance the app's backend
+                  functionality, ensuring seamless integration with cloud
+                  services and efficient data management. Utilized Flutter and
+                  Dart to implement intuitive user interfaces, resulting in a
+                  visually appealing and user-friendly mobile application.
+                  Assisted in optimizing app performance, conducting thorough
+                  testing, and troubleshooting to deliver a robust and reliable
+                  end product.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Software Engineer</h4>
+                <span>March 2022 — September 2022</span>
+                <p class="timeline-text">
+                  Spearheaded web development projects, including the agency’s
+                  own website, using modern web technologies. Provided
+                  consultancy services, offering strategic insights for clients
+                  to bolster their web presence and functionality.
+                </p>
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+        -->
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Finance</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Orizon</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Fundo</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Brawlhalla</h3>
+
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-5.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">DSM.</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-6.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">MetaSpark</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-7.png"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Summary</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-8.jpg"
+                      alt="task manager"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Task Manager</h3>
+
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-9.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Arrival</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+    -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+    -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
